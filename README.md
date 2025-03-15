@@ -5,19 +5,19 @@ A simple Todo List application built with HTML, CSS, and JavaScript. You can add
 
 ## Features
 ### ➤ Main Page:
-![Main Page](/screenshots/main-page.png)
+![Main Page](https://github.com/Bekamgenene/Todo-List-App-with-Javascript/screenshots/main-page.png)
 _This is the main page where you can add new tasks._
 
 ### ➤ After Adding Tasks:
-![Added Tasks](/screenshots/added-tasks.png)
+![Added Tasks](https://github.com/Bekamgenene/Todo-List-App-with-Javascript/screenshots/added-tasks.png)
 _This shows tasks listed with Edit and Delete buttons._
 
 ### ➤ Edit Task:
-![Edit Task](/screenshots/edit-task.png)
+![Edit Task](https://github.com/Bekamgenene/Todo-List-App-with-Javascript/screenshots/edit-task.png)
 _Prompt that appears when editing a task._
 
 ### ➤ Delete Task:
-![Delete Task](/screenshots/delete-task.png)
+![Delete Task](https://github.com/Bekamgenene/Todo-List-App-with-Javascript/screenshots/delete-task.png)
 _After removing a task from the list._
 
 ##  Technologies Used
