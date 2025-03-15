@@ -17,7 +17,7 @@ _This shows tasks listed with Edit and Delete buttons._
 _Prompt that appears when editing a task._
 
 ### ➤ Delete Task:
-![Delete Task](screenshots/delete-task.pngjpeg)
+![Delete Task](screenshots/delete-task.png.jpeg)
 _After removing a task from the list._
 
 ##  Technologies Used
