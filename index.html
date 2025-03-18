@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Todo List App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        .task {
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .scrollable {
+            max-height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Todo List App</h1>
-    <input type="text" id="taskInput" placeholder="Add a new task...">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script>
+        function addTask() {
+            let taskInput = document.getElementById("taskInput");
+            let taskText = taskInput.value.trim();
+            if (taskText === "") {
+                alert("Please enter a task");
+                return;
+            }
+            
+            let taskItem = document.createElement("li");
+            taskItem.className = "task";
+            
+            let shortText = taskText.length > 50 ? taskText.substring(0, 50) + "..." : taskText;
+            taskItem.innerHTML = `<span class='scrollable'>${shortText}</span>`;
+            taskItem.onclick = function () { alert(taskText); };
+            
+            document.getElementById("taskList").appendChild(taskItem);
+            taskInput.value = "";
+        }
+    </script>
 </body>
 </html>
