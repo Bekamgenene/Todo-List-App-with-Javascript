@@ -38,24 +38,7 @@
     </div>
 
     <script>
-        function addTask() {
-            let taskInput = document.getElementById("taskInput");
-            let taskText = taskInput.value.trim();
-            if (taskText === "") {
-                alert("Please enter a task");
-                return;
-            }
-            
-            let taskItem = document.createElement("li");
-            taskItem.className = "task";
-            
-            let shortText = taskText.length > 50 ? taskText.substring(0, 50) + "..." : taskText;
-            taskItem.innerHTML = `<span class='scrollable'>${shortText}</span>`;
-            taskItem.onclick = function () { alert(taskText); };
-            
-            document.getElementById("taskList").appendChild(taskItem);
-            taskInput.value = "";
-        }
+        src= "script.js"
     </script>
 </body>
 </html>
